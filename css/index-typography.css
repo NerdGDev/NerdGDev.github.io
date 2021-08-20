@@ -1,0 +1,155 @@
+/* Typography */
+
+
+/*Main Body*/
+
+.title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 2rem
+}
+
+.banner-bg-text {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-size: 12vw
+}
+
+.head {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.sub-head {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.main-text {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.caption-text {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+
+/* Navbar */
+
+.navbar {
+    font-size: 1.4rem;
+}
+
+
+/*Elements*/
+
+.link-text:hover {
+    text-decoration: none;
+}
+
+.mail-link {
+    font-size: 1.5rem;
+}
+
+.mail-link:hover {
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .title {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+        font-size: 1.8rem
+    }
+
+    .banner-bg-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: 300;
+        font-size: 1.5rem;
+        font-size: 12vw
+    }
+
+    .head {
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+
+    .sub-head {
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: 200;
+        font-size: 1.4rem;
+    }
+
+    .main-text {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+
+    .caption-text {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 200;
+        font-size: 1rem;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+        font-size: 1.6rem
+    }
+
+    .banner-bg-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: 300;
+        font-size: 1.5rem;
+        font-size: 12vw
+    }
+
+    .head {
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+
+    .sub-head {
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: 200;
+        font-size: 1.3rem;
+    }
+
+    .main-text {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+
+    .caption-text {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 200;
+        font-size: 1rem;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 380) {
+    .title {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem
+    }
+}

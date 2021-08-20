@@ -1,0 +1,271 @@
+/*Colour Pallete*/
+
+
+/*
+222831
+393E46
+00ADB5
+00FFF5
+
+142850
+27496D
+0C7B93
+00A8CC
+
+1B262C
+0F4C75
+3282B8
+BBE1FA
+
+*/
+
+
+/*Colour Themes*/
+
+.theme-1 {
+    color: white;
+    background-color: #2E323C;
+}
+
+.theme-2 {
+    color: black;
+    background-color: #EDEFF8;
+}
+
+.theme-3 {
+    color: white;
+    background-color: #303641;
+}
+
+.theme-4 {
+    color: white;
+    background-color: #45415E;
+}
+
+.theme-5 {
+    color: white;
+    background-color: #222831
+}
+
+.theme-6 {
+    color: white;
+    background-color: #393E46
+}
+
+.theme-7 {
+    color: white;
+    background-color: #00ADB5
+}
+
+.theme-8 {
+    color: white;
+    background-color: #00FFF5
+}
+
+.theme-9 {
+    color: white;
+    background-color: #142850
+}
+
+.theme-10 {
+    color: white;
+    background-color: #27496D
+}
+
+.theme-11 {
+    color: white;
+    background-color: #0C7B93
+}
+
+.theme-12 {
+    color: white;
+    background-color: #00A8CC
+}
+
+.theme-banner-bg-1 {
+    color: #333940;
+}
+
+.custom-dark-st {
+    background-color: rgba(60, 60, 60, 0.8);
+    color: white;
+}
+
+
+/* Navbar */
+
+.navbar {
+    color: white;
+}
+
+.scrolled .navbar {
+    color: black;
+}
+
+.navbar-text {
+    color: white;
+}
+
+.scrolled .navbar-text {
+    color: black;
+}
+
+.navbar-mobile-button {
+    background-color: #222831;
+}
+
+
+/* Element Themes */
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+
+}
+
+.video-cover {
+    /*    background-color: rgba(0, 0, 0, 0);*/
+    color: rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    --transition: all 0.7s ease-in;
+    -ms-transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in;
+}
+
+@media screen and (min-width: 1024px) {
+    a:hover .video-cover {
+        background-color: rgba(237, 239, 248, 0.85);
+        color: inherit;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .video-cover {
+        /*    background-color: rgba(0, 0, 0, 0);*/
+        color: rgba(0, 0, 0, 0);
+        -webkit-transition: all 4s cubic-bezier(0.5, 3, 0, 1);
+        -moz-transition: all 4s cubic-bezier(0.5, 3, 0, 1);
+        --transition: all 4s cubic-bezier(0.5, 5, 0, 1);
+        -ms-transition: all 4s cubic-bezier(0.5, 3, 0, 1);
+        transition: all 4s cubic-bezier(0.5, 3, 0, 1);
+    }
+
+    .video-cover.mobile-cover {
+        background-color: rgba(237, 239, 248, 0.75);
+        color: inherit;
+    }
+}
+
+/*
+.link-decorate,
+.link-decorate-sub {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    --transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+a:hover .link-decorate {
+    color: #00FFF5;
+}
+
+a:hover .link-decorate-sub {
+    color: dimgray;
+}
+*/
+.contact-link {
+    color: white;
+    text-decoration: underline
+}
+
+.contact-link:hover {
+    color: blue
+}
+
+.link-text {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.link-text:hover {
+    color: #ababab;
+}
+
+.icon-link {
+    color: white;
+}
+
+.mail-link {
+    color: white;
+}
+
+.mail-link:hover {
+    color: darkblue;
+}
+
+/* Animated Themes */
+
+.banner-bg-anim {
+    animation-name: banner-bg-colour-anim;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner-bg-colour-anim {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    25% {
+        background-color: rgb(63, 63, 63);
+    }
+
+    50% {
+        background-color: rgb(127, 127, 127);
+    }
+
+    75% {
+        background-color: rgb(63, 63, 63);
+    }
+
+    100% {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.banner-text-1-anim {
+    animation-name: banner-text-1-colour-anim;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner-text-1-colour-anim {
+    0% {
+        color: rgb(63, 63, 63);
+    }
+
+    25% {
+        color: rgb(127, 127, 127);
+    }
+
+    50% {
+        color: rgb(63, 63, 63);
+    }
+
+    75% {
+        color: rgb(0, 0, 0);
+    }
+
+    100% {
+        color: rgb(63, 63, 63);
+    }
+}
