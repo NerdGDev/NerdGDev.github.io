@@ -1,7 +1,5 @@
 /* ============================================================
    Daniel Fowke — main.css
-   Replaces: index-banner.css, index-layout.css,
-             index-theme.css, index-typography.css
    ============================================================ */
 
 /* ---- Tokens ---- */
@@ -128,7 +126,7 @@ button { background: none; border: none; cursor: pointer; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: calc(var(--nav-h) + 60px) 28px 100px;
+  padding: calc(var(--nav-h) + 20px) 28px 80px;
   position: relative;
   overflow: hidden;
   background: var(--bg);
@@ -206,11 +204,11 @@ button { background: none; border: none; cursor: pointer; }
 
 /* ---- Page hero (sub-pages, half-height) ---- */
 .page-hero {
-  min-height: 38vh;
+  min-height: 24vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: calc(var(--nav-h) + 60px) 28px 56px;
+  padding: calc(var(--nav-h) + 24px) 28px 36px;
   position: relative;
   background: var(--bg);
   animation: bgPulse 14s ease-in-out infinite;
@@ -226,6 +224,16 @@ button { background: none; border: none; cursor: pointer; }
   margin: 0 auto;
   width: 100%;
 }
+.page-back {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-3);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 14px;
+  transition: color var(--tr);
+}
+.page-back:hover { color: var(--accent); }
 .page-title {
   font-family: var(--mono);
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -247,7 +255,7 @@ button { background: none; border: none; cursor: pointer; }
 
 /* ---- Sections ---- */
 .section {
-  padding: 80px 28px;
+  padding: 60px 28px;
 }
 .section-inner {
   max-width: var(--max-w);
@@ -354,14 +362,6 @@ button { background: none; border: none; cursor: pointer; }
 .work-card-link::after { content: ' →'; }
 
 /* ---- Portfolio grid ---- */
-.portfolio-section-title {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--text-1);
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -609,13 +609,16 @@ button { background: none; border: none; cursor: pointer; }
 .project-body {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 28px;
+  padding: 0 28px 60px;
 }
 .project-block {
-  padding: 56px 0;
+  padding: 44px 0;
   border-top: 1px solid var(--border);
 }
-.project-block:first-child { border-top: none; }
+.project-block:first-child {
+  border-top: none;
+  padding-top: 32px;
+}
 .project-block-label {
   font-family: var(--mono);
   font-size: 0.72rem;
@@ -653,6 +656,7 @@ button { background: none; border: none; cursor: pointer; }
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;
+  margin-top: 16px;
 }
 .project-split-r {
   display: grid;
@@ -684,7 +688,6 @@ button { background: none; border: none; cursor: pointer; }
   border-color: var(--border-hi);
   background: var(--accent-dim);
 }
-.contact-item-left {}
 .contact-item-label {
   font-family: var(--mono);
   font-size: 0.62rem;
@@ -736,10 +739,7 @@ footer {
   align-items: center;
 }
 .footer-icons a:hover { color: var(--accent); }
-.footer-icons svg {
-  width: 18px;
-  height: 18px;
-}
+.footer-icons svg { width: 18px; height: 18px; }
 
 /* ---- Back to top ---- */
 .back-top {
@@ -759,19 +759,9 @@ footer {
   transition: all var(--tr);
   z-index: 98;
 }
-.back-top.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.back-top:hover {
-  border-color: var(--border-hi);
-  background: var(--accent-dim);
-}
-.back-top svg {
-  width: 15px;
-  height: 15px;
-  stroke: var(--text-2);
-}
+.back-top.show { opacity: 1; transform: translateY(0); }
+.back-top:hover { border-color: var(--border-hi); background: var(--accent-dim); }
+.back-top svg { width: 15px; height: 15px; stroke: var(--text-2); }
 
 /* ---- Animations ---- */
 @keyframes fadeUp {
@@ -792,7 +782,7 @@ footer {
 .mt-sm { margin-top: 20px; }
 .mt-md { margin-top: 40px; }
 .mt-lg { margin-top: 64px; }
-.text-right { text-align: right; }
+.text-right { text-align: left; }
 
 /* ---- Responsive ---- */
 @media (max-width: 860px) {
@@ -810,8 +800,8 @@ footer {
   .nav-hamburger       { display: flex; }
   .hero-name           { font-size: 2.6rem; }
   .hero-ctas           { flex-direction: column; }
-  .section             { padding: 60px 20px; }
-  .page-hero           { padding: calc(var(--nav-h) + 40px) 20px 44px; }
+  .section             { padding: 48px 20px; }
+  .page-hero           { padding: calc(var(--nav-h) + 16px) 20px 32px; }
   .portfolio-grid      { grid-template-columns: 1fr; }
   .footer-inner        { flex-direction: column; text-align: center; }
   .footer-icons        { justify-content: center; }
